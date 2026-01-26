@@ -2,8 +2,7 @@
 set -euo pipefail
 
 AUR_LIST="aur.txt"
-AUR_DIR="$HOME/.aur"
-
+AUR_DIR="$HOME/aur"
 
 echo "===== Escolha o ambiente gráfico ====="
 echo "1) i3 (X11)"
