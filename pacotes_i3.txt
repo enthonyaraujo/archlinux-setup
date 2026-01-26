@@ -26,3 +26,4 @@ neovim
 papirus-icon-theme
 base-devel
 rsync
+feh
