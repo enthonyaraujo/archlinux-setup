@@ -64,11 +64,19 @@ echo "===== Clonando configurações ====="
 read -rp "Git/GitHub está configurado? [Y/n]: " RESPOSTA
 
 case "$RESPOSTA" in
-    [Yy]|"")
+    [Y]|"")
         echo "Clonando via SSH..."
         git clone git@github.com:enthonyaraujo/.config.git "$HOME/.config"
         ;;
-    [Nn])
+    [y]|"")
+        echo "Clonando via SSH..."
+        git clone git@github.com:enthonyaraujo/.config.git "$HOME/.config"
+        ;;
+    [N])
+        echo "Clonando via HTTPS..."
+        git clone https://github.com/enthonyaraujo/.config.git "$HOME/.config"
+        ;;
+    [n])
         echo "Clonando via HTTPS..."
         git clone https://github.com/enthonyaraujo/.config.git "$HOME/.config"
         ;;
