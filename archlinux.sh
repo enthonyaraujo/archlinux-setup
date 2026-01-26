@@ -67,25 +67,21 @@ case "$RESPOSTA" in
     [Y]|"")
         echo "Clonando via SSH..."
         git clone git@github.com:enthonyaraujo/dotfiles.git
-        cd dotfiles/
         rsync -av dotfiles/* /$HOME/.config
         ;;
     [y]|"")
         echo "Clonando via SSH..."
         git clone git@github.com:enthonyaraujo/dotfiles.git
-        cd dotfiles/
         rsync -av dotfiles/* /$HOME/.config
         ;;
     [N])
         echo "Clonando via HTTPS..."
         git clone https://github.com/enthonyaraujo/dotfiles.git
-        cd dotfiles/
         rsync -av dotfiles/* /$HOME/.config
         ;;
     [n])
         echo "Clonando via HTTPS..."
         git clone https://github.com/enthonyaraujo/dotfiles.git
-        cd dotfiles/
         rsync -av dotfiles/* /$HOME/.config
         ;;
     *)
