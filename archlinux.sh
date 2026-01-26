@@ -66,22 +66,22 @@ read -rp "Git/GitHub está configurado? [Y/n]: " RESPOSTA
 case "$RESPOSTA" in
     [Y]|"")
         echo "Clonando via SSH..."
-        git clone git@github.com:enthonyaraujo/.config.git "$HOME/.config"
+        git clone git@github.com:enthonyaraujo/dotfiles.git
         ;;
     [y]|"")
         echo "Clonando via SSH..."
-        git clone git@github.com:enthonyaraujo/.config.git "$HOME/.config"
+        git clone git@github.com:enthonyaraujo/dotfiles.git
         ;;
     [N])
         echo "Clonando via HTTPS..."
-        git clone https://github.com/enthonyaraujo/.config.git "$HOME/.config"
+        git clone https://github.com/enthonyaraujo/dotfiles.git
         ;;
     [n])
         echo "Clonando via HTTPS..."
-        git clone https://github.com/enthonyaraujo/.config.git "$HOME/.config"
+        git clone https://github.com/enthonyaraujo/dotfiles.git
         ;;
     *)
-        echo "Resposta inválida. Use Y ou N."
+        echo "Resposta inválida. Use Y/y ou N/n."
         exit 1
         ;;
 esac
