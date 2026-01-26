@@ -1,0 +1,2 @@
+visual-studio-code-bin
+catppuccin-gtk-theme-mocha 
