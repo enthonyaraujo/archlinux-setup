@@ -15,14 +15,6 @@ git config --global user.name  "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
 
 git config --global init.defaultBranch main
-git config --global core.editor nvim
-git config --global fetch.prune true
-
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.ci commit
-git config --global alias.st status
-git config --global alias.graph 'log --oneline --graph --decorate --all'
 
 echo "===== Configurando SSH ====="
 if [[ ! -f ~/.ssh/id_ed25519 ]]; then
